@@ -42,7 +42,7 @@ var player2position =database.ref('player2/position2');
 player2position.on("value", readposition2, showerror);
 
 setup = new Setup();
-
+obsvelocity();
 
 }
 
@@ -78,6 +78,7 @@ if(gameState==="play"){
    }
 
    spriteVisibility();
+ 
 // Adding images to battery
 
 if(battery1life === 4){
@@ -417,7 +418,7 @@ spike_ball4.visible = false;
 laser.visible = false;
 laser2.visible = false;                                   
 }                                    
-
+}
 spike_ball.bounceOff(wall4);
 spike_ball.bounceOff(wall4b);
 spike_ball2.bounceOff(wall2i);
@@ -523,7 +524,7 @@ player2.bounceOff(wall5);
 player2.bounceOff(wall6);
 player2.bounceOff(wall7);
 player2.bounceOff(wall8);
-}
+
 drawSprites();
 
 }
@@ -683,4 +684,13 @@ function resetposition2(){
       'x': 25,
       'y': 550
   }) 
+}
+
+function obsvelocity(){
+   spike_ball.velocityY = 8;
+   spike_ball2.velocityY = 5;
+   spike_ball3.velocityY = -7;
+   spike_ball4.velocityY = 7;
+   laser.velocityY = 8;
+   laser2.velocityY = -8;
 }
