@@ -18,32 +18,32 @@ treasure.scale = 0.09;
 spike_ball = createSprite(845,335,20,20);
 spike_ball.addImage(spike_ball_image);
 spike_ball.scale = 0.14;
-spike_ball.velocityY = 8;
+//spike_ball.velocityY = 8;
 
 spike_ball2 = createSprite(595,35,20,20);
 spike_ball2.addImage(spike_ball_image);
 spike_ball2.scale = 0.14;
-spike_ball2.velocityY = 5;
+//spike_ball2.velocityY = 5;
 
 spike_ball3 = createSprite(950,535,20,20);
 spike_ball3.addImage(spike_ball_image);
 spike_ball3.scale = 0.14;
-spike_ball3.velocityY = -7;
+//spike_ball3.velocityY = -7;
 
 spike_ball4 = createSprite(1050,385,20,20);
 spike_ball4.addImage(spike_ball_image);
 spike_ball4.scale = 0.14;
-spike_ball4.velocityY = 7;
+//spike_ball4.velocityY = 7;
 
 laser = createSprite(610,400,10,10);
 laser.addImage(laser_image)
 laser.scale = 0.35
-laser.velocityY = 8;
+//laser.velocityY = 8;
 
 laser2 = createSprite(730,402,10,10);
 laser2.addImage(laser2_image)
 laser2.scale = 0.35
-
+//laser2.velocity=-8;
 
 battery1 = createSprite(1215,40,10,10)
 battery1.addImage(full_image);
@@ -54,7 +54,7 @@ battery2.addImage(full_image);
 //Creating walls.
 
  wall1 = createSprite(80,285,10,460);
- wall1.shapeColor = "red"
+ wall1.shapeColor = random(0,255), random(0,255), random(0,255);
  wall1a = createSprite(570,105,10,100);
  wall1b = createSprite(620,105,10,100);
  wall1c = createSprite(520,255,10,300);
